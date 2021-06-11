@@ -1,0 +1,7 @@
+<?php require_once('vendor/autoload.php');
+
+require 'vendor/autoload.php';
+$client = Elasticsearch\ClientBuilder::create()->build();
+if ($client) {
+    echo 'connected';
+}
